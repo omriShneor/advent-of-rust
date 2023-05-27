@@ -29,7 +29,7 @@ struct Aoc2022Day4 {
     lines: Vec<String>
 }
 
-impl Runner for Aoc2022Day4 {
+impl Runner<u32> for Aoc2022Day4 {
     fn parse(&mut self, path: &str) {
         self.lines = aoclib::read_lines(path)
     }

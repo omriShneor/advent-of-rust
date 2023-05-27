@@ -20,8 +20,8 @@ pub fn read_lines(path: &str) -> Vec<String> {
         .collect()
 }
 
-pub trait Runner {
+pub trait Runner<T> {
     fn parse(&mut self, path: &str);
-    fn part1(&self) -> u32;
-    fn part2(&self) -> u32;
+    fn part1(&self) -> T;
+    fn part2(&self) -> T;
 }
